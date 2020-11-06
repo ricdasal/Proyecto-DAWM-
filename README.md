@@ -12,7 +12,7 @@ la empresa necesita mostrar sus productos, sus contactos y sus redes para poder 
 marca en la web.
 
 Enlace al diseño web:
-https://github.com/ricdasal/Proyecto-DAWM-
+https://xd.adobe.com/view/6a9f0479-f9ed-46d6-ba51-3a68900192ab-3fcc/screen/e5320a16-ecd9-4bea-83df-d4026dddbb72?fullscreen&hints=off
 
 Enlace en bootstrap:
 https://demos.creative-tim.com/blk-design-system/index.html
