@@ -7,8 +7,8 @@ marca en la web.
 
 ## Integrantes ✒️
 
-* **Katiuska Marleny Marín Suárez** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Ricardo David Salazar Secaira** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Katiuska Marleny Marín Suárez** - *Líder* - [Lovelace13](https://github.com/Lovelace13)
+* **Ricardo David Salazar Secaira** - *Trabajo Inicial* - [ricdasal](https://github.com/ricdasal)
 * **Luis Hector Campi Alvarez**
 * **George Alberto Henriquez Ronquillo**
 * **Jeffrey Gabriel Prado Reyes**
