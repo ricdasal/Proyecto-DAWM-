@@ -13,8 +13,8 @@ marca en la web.
 * **George Alberto Henriquez Ronquillo**
 * **Jeffrey Gabriel Prado Reyes** - *Backend Django*
 
-##Instalación
-````
+## Instalación
+```
 npm install
 ```
 
