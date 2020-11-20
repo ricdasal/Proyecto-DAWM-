@@ -1,0 +1,9 @@
+1 npm init
+2 definir servidor: npm install lite-server --save-dev
+link de lite server:https://github.com/johnpapa/lite-server
+3 Agregar node_modules a gitignore
+4 modificar el package.json "dev"
+
+
+
+
