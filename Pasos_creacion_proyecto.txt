@@ -3,6 +3,10 @@
 link de lite server:https://github.com/johnpapa/lite-server
 3 Agregar node_modules a gitignore
 4 modificar el package.json "dev"
+5 instalar bootstrap: npm install bootstrap --save
+6 npm install jquery --save
+7 npm install popper.js --save
+
 
 
 
