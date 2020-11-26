@@ -1,10 +1,35 @@
 
-.social {
-	position: fixed;
-	left: 0;
-	top: 200px;
-	z-index: 2000;
+.nbar {
+	font-size: 2rem !important;
 }
+
+.espaciado{
+	padding-right: 0.25rem;
+}
+
+.nencoger{
+	font-size: 0.70rem !important;
+	margin-top: 0.25rem;
+	
+
+}
+.nencoger1{
+	padding-right: 7rem;
+
+}
+
+.mespaciado{
+	margin-top: 0.3rem;
+
+}
+ .iespaciado{
+	 display: inline-flexbox !important;
+	 font-size: 1rem;
+	 margin-bottom: 0.25rem !important;
+	 
+ }
+
+
 
 .social ul {
 	list-style: none;
