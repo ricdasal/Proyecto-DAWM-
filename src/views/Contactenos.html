@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Template\assets\css\personal.css">
+    <link rel="stylesheet" href="../../Template/assets/css/contactanos.css">
+
+    <title>Contactenos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+          <!-- Navbar content -->
+        <div class='container'>
+          <a href="../../index.html"><span class = 'navbar-brand nbar' >Lubricantes Saldur</span></a>
+          <ul class="nav">
+              <li class="nav-item mespaciado">
+                <a class="nav-link fa fa-facebook facebook" href="#"></a>
+              </li>
+              <li class="nav-item mespaciado">
+                <a class="nav-link fa fa-twitter twitter" href="#"></a>
+              </li>
+              <li class="nav-item espaciado mespaciado">
+                <a class="nav-link fa fa-google google" href="#"></a>
+              </li>
+  
+            <!--Aquí comienza el menú desplegable en nav-->
+          <li class="nav-item dropdown espaciado">
+            <a class="nav-link dropdown-toggle iespaciado" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <!--indexar sus partes aquí-->
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Quienes Somos</a>
+              <a class="dropdown-item" href="#">Productos</a>
+              <a class="dropdown-item" href="#">Noticias</a>
+              <a class="dropdown-item" href="src/views/Contactenos.html">Contáctenos</a>
+            </div>
+          </li>
+  
+          <li class="nav.item ">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text nencoger"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control nencoger nencoger1" placeholder="Búsqueda">
+            </div>
+          </li>
+  
+            
+          </ul>
+          
+         
+    
+          
+        </div>
+  
+      </nav>
+  
+  
+    </header>
+    <section class="Formulario">
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-7">
+                    <label for="mail">Correo electrónico</label>
+                    <input type="email" class="form-control" id="mail" placeholder="Ingrese un correo de contacto">
+                </div>
+                <div class="form-group col-sm-5">     
+                    <label for="fecha">Fecha de Nacimiento: </label> 
+                    <input class="form-control" type="date" name="fecha" value="2020-11-27" id="fecha" required="required">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="provincia">Provincia:</label>
+                    <select name="provincias" id="provincia" class="form-control">
+                        <option selected aria-placeholder="Provincia">Provincia</option>
+                        <option value="Guayas">Guayas</option>
+                        <option value="Los Ríos">Los Ríos</option>
+                        <option value="Pichincha">Pichincha</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10">
+
+                </textarea>    
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quiero recibir promociones
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </section>
+</body>
+</html>
