@@ -1,6 +1,80 @@
+body, header{
+	font-weight: "Poppins" !important;
+	
+
+}
 
  .main-saldur{
 	padding: 20rem;
-	background-color: lightblue !important;
-	margin: 5%;
+	background-color: #dbc15f !important;
+	margin-top: 1rem;
+	margin-left: 12.50rem;
+	margin-right: 12.50rem;
+	text-align: center;
+	
+	
  }
+
+ @media only screen and (max-width: 600px){
+	.main-saldur{
+		background-color: #dbc15f!important;
+		text-align: center;
+		margin-top: 1rem;
+		margin-left: 2rem;
+		padding: 17rem;
+	 }
+
+
+	 .main-saldur div{
+		margin-top: -6rem;
+
+		margin-left: -9rem;
+	   
+	}
+
+	.txupbutton{
+		height: 50%;;
+		color: #4e658b; 
+		font-size: 1.5rem;
+		text-align: justify;
+	
+	 }
+	
+
+ }
+
+ .main-saldur div{
+	 margin-top: -6rem;
+	 
+	
+
+	
+	 
+ }
+
+
+
+ .descubrenos{
+	border-style: none;
+	font-size: 2rem;
+	color:white;
+	background-color: #4e658b;
+	border-radius: 10px;
+
+
+ }
+
+ .descubrenos:hover{
+	 background-color: #4e658f;
+ }
+
+ .txupbutton{
+	height: 50%;;
+	color: #4e658b; 
+	font-size: 2.5rem;
+
+ }
+
+
+
+ 
