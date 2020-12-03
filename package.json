@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "empresa distribuidora de lubricantes para motor.",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "chart.js": "^2.9.4",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
