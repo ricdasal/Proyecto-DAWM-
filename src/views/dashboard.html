@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\..\Template\assets\css\dashboard.css">
+
+    <title>Admin Lubricantes Saldur</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <button type="button" class="btn btn-light" id="search-btn">
+                            <span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                        <input id="search-text" class="form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Notifications
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Not 1</a>
+                            <a class="dropdown-item" href="#">Not 2</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            User
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a class="simple-text logo-mini" href="/">
+                        <img class="logo-img"
+                            src="https://scontent.fgye5-1.fna.fbcdn.net/v/t1.0-9/120048759_101788305023995_5997295043642270537_n.png?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeG0MyEthiTRLAraLZO5QCZrRFezJWi0xQNEV7MlaLTFA2xl5Ey5oD-GvQ4UsIUmlWPIN6wc7NiT_PnaAUXfttwI&_nc_ohc=zDMWv84x_dYAX_mhgah&_nc_oc=AQmweacH8mIs9luuKuDwHOvhCn-3nnj9J2LGNh0VRQHvMHPSWVJFqJv93HYDi5cMtd0&_nc_ht=scontent.fgye5-1.fna&oh=db7788c2d7d0f6e4c105ea21e65754d4&oe=5FEBF331"
+                            alt="">
+                    </a>
+                    <a class="simple-text logo-mini" href="/">
+                        Lubricantes<br>Saldur
+                    </a>
+                </div>
+                <hr class="middle-line">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            side bar option 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            side bar option 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            side bar option 3
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            side bar option 4
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <div class="content">
+                <div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-chart card-plain">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-6 text-left">
+                                            <h8 class="card-category">Balance</h8>
+                                            <!-- <hr class="line-primary" /> -->
+                                            <h5 class="card-title">Ventas del año</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas class="lineChart"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card card-chart card-plain">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-6 text-left">
+                                            <!-- <h8 class="card-category">Pedidos</h8> -->
+                                            <h5 class="card-title">Pedidos entregados</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas class="lineChart"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-chart card-plain">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-6 text-left">
+                                            <h8 class="card-category">Productos</h8>
+                                            <h5 class="card-title">Costos</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas class="barChart"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card card-chart card-plain">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col-sm-6 text-left">
+                                            <h8 class="card-category">Inventario</h8>
+                                            <h5 class="card-title">Stock</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area"><canvas class="lineChart"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript" src="..\..\Template\assets\js\dashboard-nav.js"></script>
+    <script type="text/javascript" src="..\..\Template\assets\js\dashboard-chart.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
