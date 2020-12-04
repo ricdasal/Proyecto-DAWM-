@@ -46,9 +46,9 @@
           </a>
           <!--indexar sus partes aquí-->
           <div class="dropdown-menu  colorLetra" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item  colorLetra" href="#">Quienes Somos</a>
+            <a class="dropdown-item  colorLetra" href="#presentacion">Quienes Somos</a>
             <a class="dropdown-item  colorLetra" href="#">Productos</a>
-            <a class="dropdown-item  colorLetra" href="#">Noticias</a>
+            <a class="dropdown-item  colorLetra" href="#Noticias">Noticias</a>
             <a class="dropdown-item  colorLetra" href="src/views/Contactenos.html">Contáctenos</a>
             <a class="dropdown-item  colorLetra" href="src/views/geolocalizacion.html">Ubicación</a>
           </div>
@@ -78,10 +78,22 @@
     </section>
 
     <section class="Somos">
-      
+      <div class="Somos-descripcion">
+        <p id="presentacion">Quienes Somos</p>
+        <img id="log1" src="/Template/assets/img/ripp.png" alt="logo" width="125" height="125">
+        <div id="mision">
+          <h3>Misión</h3>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        </div>
+        <div id="vision">
+          <h3>Visión</h3>
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+        </div>
+        <img id="log2" src="/Template/assets/img/etherum.png" alt="logo2" width="125" height="125">
+      </div>
     </section>
 
-    <section>
+    <section id="Noticias">
       <div id="demo">
         <div class="container contenedor mt-5 mb-5">
           <div class="card">
@@ -131,7 +143,6 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="Template/assets/js/owl.carousel.min.js"></script>
   </body>
