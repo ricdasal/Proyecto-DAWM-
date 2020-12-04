@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="Template/assets/css/owl.carousel.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@3.1.0/introjs.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Template/assets/css/navbar.css">
     <link rel="stylesheet" href="Template/assets/css/index.css">
@@ -27,7 +28,7 @@
       <nav class="navbar navbar-expand-lg bg-white">
         <!-- Navbar content -->
       <div class='container'>
-        <a href="#"><span class = 'navbar-brand nbar colorLetra' >Lubricantes Saldur</span></a>
+        <a data-step="1" data-intro="Este es el logo y nombre de la página" href="#"><span class = 'navbar-brand nbar colorLetra' >Lubricantes Saldur</span></a>
         <ul class="nav colorLetra">
             <li class="nav-item mespaciado colorLetra">
               <a class="nav-link fa fa-facebook facebook colorLetra" href="#"></a>
@@ -41,7 +42,7 @@
 
           <!--Aquí comienza el menú desplegable en nav-->
         <li class="nav-item dropdown espaciado">
-          <a class="nav-link dropdown-toggle iespaciado  colorLetra" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+          <a data-intro="Aquí podrá encontrar las distintas secciones que posee el sitio web" class="nav-link dropdown-toggle iespaciado  colorLetra" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
             Menu
           </a>
           <!--indexar sus partes aquí-->
@@ -76,7 +77,7 @@
       </div>  
     </section>
 
-    <section class="Somos">
+    <section data-intro="Aquí podemos encontrar una breve descripción de lo que somos" class="Somos">
       <div class="Somos-descripcion">
         <p id="presentacion">Quienes Somos</p>
         <img id="log1" src="/Template/assets/img/ripp.png" alt="logo" width="125" height="125">
@@ -92,7 +93,7 @@
       </div>
     </section>
 
-    <section id="Noticias">
+    <section data-intro="Dentro podemos observar las últimas noticias referentes a los lubricantes en el mercado" id="Noticias">
       <div id="demo">
         <div class="container contenedor mt-5 mb-5">
           <div class="card">
@@ -141,9 +142,15 @@
     </footer>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@3.1.0/intro.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="Template/assets/js/owl.carousel.min.js"></script>
+
+    <script>
+      introJs().start();
+    </script>
+
   </body>
 </html>
 

@@ -9,7 +9,6 @@ marca en la web.
 
 * **Katiuska Marleny Marín Suárez** - *Líder* - [Lovelace13](https://github.com/Lovelace13)
 * **Ricardo David Salazar Secaira** - *Trabajo Inicial* - [ricdasal](https://github.com/ricdasal)
-* **Luis Hector Campi Alvarez**
 * **George Alberto Henriquez Ronquillo**
 * **Jeffrey Gabriel Prado Reyes** - *Backend Django*
 
@@ -29,6 +28,6 @@ Enlace al diseño web:
 https://xd.adobe.com/view/6a9f0479-f9ed-46d6-ba51-3a68900192ab-3fcc/screen/e5320a16-ecd9-4bea-83df-d4026dddbb72?fullscreen&hints=off
 
 Enlace en bootstrap:
-https://demos.creative-tim.com/blk-design-system/index.html
-https://demos.creative-tim.com/blk-design-system-angular/
-https://getbootstrap.com/
+primer parcial: https://demos.creative-tim.com/blk-design-system/index.html
+segundo parcial: https://demos.creative-tim.com/blk-design-system-angular/
+framework: https://getbootstrap.com/
