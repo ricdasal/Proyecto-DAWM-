@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Template/assets/css/navbar.css">
+    <link rel="stylesheet" href="../../Template/assets/css/geo.css">
+
+    <title>Ubicación</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+          <!-- Navbar content -->
+            <div class='container'>
+                <a href="../../index.html"><span class = 'navbar-brand nbar' >Lubricantes Saldur</span></a>
+                <ul class="nav">
+                    <li class="nav-item mespaciado">
+                        <a class="nav-link fa fa-facebook facebook" href="#"></a>
+                    </li>
+                    <li class="nav-item mespaciado">
+                        <a class="nav-link fa fa-twitter twitter" href="#"></a>
+                    </li>
+                    <li class="nav-item espaciado mespaciado">
+                        <a class="nav-link fa fa-google google" href="#"></a>
+                    </li>
+        
+                    <!--Aquí comienza el menú desplegable en nav-->
+                <li class="nav-item dropdown espaciado">
+                    <a class="nav-link dropdown-toggle iespaciado" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+                    Menu
+                    </a>
+                    <!--indexar sus partes aquí-->
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../../index.html">Quienes Somos</a>
+                    <a class="dropdown-item" href="#">Productos</a>
+                    <a class="dropdown-item" href="#">Noticias</a>
+                    <a class="dropdown-item" href="./Contactenos.html">Contáctenos</a>
+                    </div>
+                </li>
+        
+                <li class="nav.item ">
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text nencoger"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control nencoger nencoger1" placeholder="Búsqueda">
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+  
+    </header>
+    <section class="geo container">
+        <h2>Ubicación</h2>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UAAGmdaQhUtrm-g8-ln_dad2X_ASeYUV" width="100%" height="480"></iframe>
+        </div>
+    </section>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
