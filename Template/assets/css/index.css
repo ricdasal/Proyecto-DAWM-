@@ -1,65 +1,28 @@
-body, header{
-	font-weight: "Poppins" !important;
-	
-
+body{
+	font-weight: "Poppins";
+	margin: 0px 30px;
+	/* background-color: #F4F4F1; */
 }
 
  .main-saldur{
-	padding: 20rem;
-	background-color: #dbc15f !important;
-	margin-top: 1rem;
-	margin-left: 12.50rem;
-	margin-right: 12.50rem;
-	padding-bottom: 15rem;
+	padding: 15px;
+	background-color: #dbc15f;
+	margin: 20px;
 	text-align: center;
-	
-	
+	justify-content: space-around;
+	max-width: 1350px;
+	height: 450;
  }
+/* 
+ .Somos {
 
- @media only screen and (max-width: 600px){
-	.main-saldur{
-		background-color: #dbc15f!important;
-		text-align: center;
-		margin-top: 1rem;
-		margin-left: 2rem;
-		padding: 17rem;
-		text-align: center;
-	 }
+ } */
 
-
-	 .main-saldur div{
-
-		margin-left: -10rem;
-	   
-	}
-
-	.txupbutton{
-		height: 50%;;
-		color: #4e658b; 
-		font-size: 0.75rem;
-		text-align: justify;
-	
-	 }
-
-	 .descubrenos{
-		border-style: none;
-		font-size: 2rem;
-		color:white;
-		background-color: #4e658b;
-		border-radius: 10px;
-	
-	
-	 }
-	
-
- }
-
- .main-saldur div{
-	 margin-top: -6rem;
-	 
-	
-	 
- }
+@media screen and (max-width: 760){
+	/* .main-saldur{
+		
+	} */
+}
 
 
 
@@ -73,8 +36,6 @@ body, header{
 	padding-right: 1rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-
-
  }
 
  .descubrenos:hover{
@@ -83,11 +44,9 @@ body, header{
 
  .txupbutton{
 	font-weight: bold;
-	width: 200%;;
+	width: 100%;;
 	color: #4e658b; 
 	font-size: 3rem;
-	margin-left: -15rem;
-
  }
 
 
