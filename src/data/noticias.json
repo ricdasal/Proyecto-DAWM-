@@ -1,0 +1,52 @@
+{
+	"items" : [
+		{
+			"titulo":"Noticia 1",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.\n Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+          	"img":"http://wallpapers4screen.com/Uploads/30-1-2016/26088/photo-oil-change-engine-oil-machine-oil.jpg",
+			"alt" : "Noticia 1"
+		},
+		{
+			"titulo":"Noticia 2",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://www.shell.com.qa/en_qa/business-customers/industrial-lubricants/lubricants-product-range/rimula-truck-heavy-duty-engine-oil/fully-synthetic-oils/_jcr_content/pagePromo/image.img.960.jpeg/1507540042042/yellow-truck-on-a-road.jpeg",
+			"alt" : "Noticia 2"
+		},
+		{
+			"titulo":"Noticia 3",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.\n Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://www.autonocion.com/wp-content/uploads/2018/06/Aceite-motor-3-930x607.jpg",
+			"alt" : "Noticia 3"
+		},
+		{
+			"titulo":"Noticia 4",
+          	"descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.\n Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://noticias.coches.com/wp-content/uploads/2015/02/taller-mecanico.jpg",
+			"alt" : "Noticia 4"
+		},
+		{
+			"titulo":"Noticia 5",
+          	"descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "http://e.rpp-noticias.io/normal/2017/05/29/415195lubricantes-minerales-sinteticosjpg.jpg",
+			"alt" : "Noticia 5"
+		},
+		{
+			"titulo":"Noticia 6",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://s3.amazonaws.com/wp.prod.neoauto.pe/noticias/wp-content/uploads/2019/03/10155634/2.jpg",
+			"alt" : "Noticia 6"
+		},
+		{
+			"titulo":"Noticia 7",
+            "descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.\n Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://www.autonocion.com/wp-content/uploads/2018/07/Aceite-motor-ferrari.jpg",
+			"alt" : "Noticia 7"
+		},
+		{
+			"titulo":"Noticia 8",
+          	"descripcion":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nulla ut accusantium, odio facere ex eaque pariatur labore rerum laboriosam. Doloribus impedit voluptatum perferendis quos veritatis velit officia eos? Explicabo.",
+			"img": "https://www.autonocion.com/wp-content/uploads/2018/04/filtro-aceite-coche.jpg",
+			"alt" : "Noticia 8"
+		}
+	]
+}
