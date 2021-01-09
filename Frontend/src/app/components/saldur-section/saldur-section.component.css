@@ -1,0 +1,41 @@
+.main-saldur{
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	background-color: #dbc15f;
+	margin: 20px;
+	text-align: center;
+	justify-content: space-around;
+	max-width: 1350px;
+	height: 450px;
+ }
+
+ .descubrenos{
+	border-style: none;
+	font-size: 2rem;
+	color:white;
+	background-color: #4e658b;
+	border-radius: 10px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+ }
+
+ .descubrenos:hover{
+	 background-color: #4e658f;
+ }
+
+ .txupbutton{
+	font-weight: bold;
+	width: 100%;;
+	color: #4e658b;
+	font-size: 3rem;
+ }
+
+ @media screen
+and (max-width: 760px) {
+  .main-saldur .txupbutton{
+	font-size: 1.5rem;
+  }
+}

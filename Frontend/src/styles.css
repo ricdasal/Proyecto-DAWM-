@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	font-weight: "Poppins";
+  margin: 0px 30px;
+	/* background-color: #F4F4F1; */
+}
