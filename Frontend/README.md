@@ -1,33 +1,27 @@
-# Proyecto DAWM por Assembly-
+# LubricantesSaldur
 
-_Descripción_:
-Saldur es una empresa distribuidora de lubricantes para motor. En la página web, 
-la empresa necesita mostrar sus productos, sus contactos y sus redes para poder alzar su 
-marca en la web.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
-## Integrantes ✒️
+## Development server
 
-* **Katiuska Marleny Marín Suárez** - *Líder* - [Lovelace13](https://github.com/Lovelace13)
-* **Ricardo David Salazar Secaira** - *Trabajo Inicial* - [ricdasal](https://github.com/ricdasal)
-* **George Alberto Henriquez Ronquillo**
-* **Jeffrey Gabriel Prado Reyes** - *Backend Django*
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Instalación
-```
-npm install
-```
+## Code scaffolding
 
-## Iniciar Servidor
-```
-npm run dev
-```
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+## Build
 
-### Enlaces
-Enlace al diseño web:
-https://xd.adobe.com/view/6a9f0479-f9ed-46d6-ba51-3a68900192ab-3fcc/screen/e5320a16-ecd9-4bea-83df-d4026dddbb72?fullscreen&hints=off
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Enlace en bootstrap:
-primer parcial: https://demos.creative-tim.com/blk-design-system/index.html
-segundo parcial: https://demos.creative-tim.com/blk-design-system-angular/
-framework: https://getbootstrap.com/
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

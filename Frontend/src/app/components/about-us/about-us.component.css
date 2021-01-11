@@ -1,0 +1,57 @@
+.Somos {
+	padding: 15px;
+	background-color: #F4F4F1;
+	margin: 20px;
+	text-align: center;
+	justify-content: space-around;
+	max-width: 1350px;
+ }
+
+.Somos-descripcion{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+	grid-auto-rows: 125px;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+	align-content: space-between;
+}
+
+#presentacion{
+	font-size: 2rem;
+	font-weight: bold;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	padding: 5px;
+	color: #2A3E50;
+}
+
+#mision {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+#vision {
+	grid-row-start: 3;
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+.Somos-descripcion img#log1 {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+.Somos-descripcion img#log2 {
+	grid-column-start: 5;
+	grid-row-start: 2;
+}
+
+@media screen
+and (max-width: 760px) {
+  .Somos-descripcion {
+	display: flex;
+	flex-direction: column;
+  }
+}

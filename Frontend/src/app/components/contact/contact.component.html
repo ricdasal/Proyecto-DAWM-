@@ -1,0 +1,57 @@
+<app-header></app-header>
+<section class="Formulario">
+  <h2>Contacto</h2>
+  <form id="DatosContacto" method="POST">
+      <div class="form-row">
+          <div class="form-group col-sm-6">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-sm-7">
+              <label for="mail">Correo electrónico</label>
+              <input type="email" class="form-control" id="mail" name="email" placeholder="Ingrese un correo de contacto">
+          </div>
+          <div class="form-group col-sm-5">
+              <label for="fecha">Fecha de Nacimiento: </label>
+              <input class="form-control" type="date" name="fecha" value="2020-11-27" id="fecha" required="required">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-sm-6">
+              <label for="ciudad">Ciudad:</label>
+              <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-sm-6">
+              <label for="provincia">Provincia:</label>
+              <select name="provincias" id="provincia" class="form-control">
+                  <option selected aria-placeholder="Provincia">Provincia</option>
+                  <option value="Guayas">Guayas</option>
+                  <option value="Los Ríos">Los Ríos</option>
+                  <option value="Pichincha">Pichincha</option>
+              </select>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea id="comentario" name="comments" class="form-control" rows="10">
+
+          </textarea>
+      </div>
+      <div class="form-group">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="promociones" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                  Quiero recibir promociones
+              </label>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+</section>
