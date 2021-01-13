@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS db_Lubricantes_Saldur;
 USE db_Lubricantes_Saldur;
 
--- DROP DATABASE db_agenda;
+-- DROP DATABASE db_Lubricantes_Saldur;
 -- -----------------------------------------------------
 -- Table Usuario
 -- -----------------------------------------------------
