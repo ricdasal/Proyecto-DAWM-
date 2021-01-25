@@ -19,12 +19,12 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.Usuario = require("./usuario.model.js")(sequelize, Sequelize);
-db.Vendedor = require("./vendedor.model.js")(sequelize, Sequelize);
-db.Cliente = require("./cliente.model.js")(sequelize, Sequelize);
-db.Comentario = require("./comentario.model.js")(sequelize, Sequelize);
-db.Administrador = require("./administrador.model.js")(sequelize, Sequelize);
-db.Producto = require("./producto.model.js")(sequelize, Sequelize);
+db.Usuario = require("./Usuario.model.js")(sequelize, Sequelize);
+db.Vendedor = require("./Vendedor.model.js")(sequelize, Sequelize);
+db.Cliente = require("./Cliente.model.js")(sequelize, Sequelize);
+db.Comentario = require("./Comentario.model.js")(sequelize, Sequelize);
+db.Administrador = require("./Administrador.model.js")(sequelize, Sequelize);
+db.Producto = require("./Producto.model.js")(sequelize, Sequelize);
 
 // db.maestro.hasMany(db.detalle, { as: "detalles" });
 // db.detalle.belongsTo(db.maestro, {

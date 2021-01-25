@@ -1,15 +1,28 @@
 module.exports = (sequelize, DataTypes) => {
-  const Maestro = sequelize.define("maestro", {
-    item: {
+  const Producto = sequelize.define("producto", {
+    // idProducto: {
+    //   type: DataTypes.INT
+    // },
+    Nombre: {
+      type: DataTypes.STRING, allowNull: false
+    },
+    Stock: {
       type: DataTypes.INTEGER
     },
-    nombre: {
-      type: DataTypes.STRING
+    FechaVencimiento: {
+      type: DataTypes.DATE
     },
-    valor: {
-      type: DataTypes.FLOAT
+    FechaIngreso: {
+      type: DataTypes.DATE
+    },
+    idAdministrador: {
+      type: DataTypes.INTEGER, allowNull: false,
+      references: {
+        model: administrador,
+        key: 'idAdministrador'
+      }
     }
   });
 
-  return Maestro;
+  return Producto;
 };
