@@ -1,86 +1,9 @@
-.dissapeared {
-  display: none;
-}
-
-.sidebar,
-.off-canvas-sidebar {
-  height: 76%;
-  max-width: 330px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-size: cover;
-  background-position: center center;
-  display: block;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
-  margin-top: 80px;
-  margin-left: 20px;
-  border-radius: 5px;
-  transition: 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-}
-
-.sidebar-wrapper {
-  min-width: 100%;
-  min-height: 100%;
-  max-height: calc(100vh - 705px);
-  z-index: 4;
-  position: relative;
-  overflow: auto;
-}
-
-.dropdown .dropdown-backdrop {
-  display: none !important;
-}
-
-.nav {
-  width: 100%;
-  text-align: center;
-}
-
-.nav,
-.user .info {
-  display: inline-block;
-}
-
-.sidebar-normal {
-  margin: 0;
-  position: relative;
-  transform: translateX(0px);
-  opacity: 1;
-  white-space: nowrap;
-  display: block;
-  line-height: 23px;
-  z-index: 1;
-}
-
-.sidebar-mini-icon {
-  text-transform: uppercase;
-  width: 34px;
-  margin-right: 10px;
-  margin-left: 0px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 25px;
-  position: relative;
-  float: left;
-  z-index: 1;
-  display: inherit;
-  line-height: 24px;
-}
-
 hr.middle-line {
   margin-top: 0px;
   margin-bottom: 5px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 0;
-}
-
-i {
-  font-size: 17px;
-  line-height: 20px;
-  width: 26px;
 }
 
 .logo {
@@ -98,7 +21,7 @@ a.logo-mini {
   color: #000;
 }
 
-img.logo-img {
+.logo-img {
   border-radius: 150px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -109,25 +32,12 @@ img.logo-img {
   width: 60px;
 }
 
-p {
-  float: left;
-  font-size: 20px;
-  margin: 10px 10px;
-  color: white;
-  line-height: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .simple-text {
   text-transform: uppercase;
   margin: auto 10px auto 5px;
   white-space: nowrap;
   line-height: 20px;
   overflow: hidden;
-}
-
-.main-panel .content {
-  padding: 80px 30px 30px 280px;
 }
 
 .nav-item {
@@ -139,202 +49,34 @@ h6 {
   font-weight: normal;
 }
 
-
-/****
-.user {
-  padding-bottom: 20px;
-  margin: 20px auto 0;
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 15px;
-    height: 1px;
-    width: calc(100% - 30px);
-    background: $opacity-5;
-  }
-
-  .photo {
-    width: 34px;
-    height: 34px;
-    overflow: hidden;
-    float: left;
-    z-index: 5;
-    margin-right: 10px;
-    border-radius: 50%;
-    margin-left: 23px;
-    box-shadow: $box-shadow-raised;
-    @extend .animation-transition-general;
-
-    img {
-      width: $full-width;
-    }
-  }
-
-  a {
-    color: $white;
-    text-decoration: none;
-    padding: $padding-base-vertical 15px;
-    white-space: nowrap;
-    @extend .animation-transition-general;
-  }
-
-  .info {
-    > a {
-      display: block;
-      line-height: 18px;
-
-      > span {
-        @extend .animation-transition-general;
-        display: block;
-        position: relative;
-        opacity: 1;
-      }
-    }
-
-    .caret {
-      position: absolute;
-      top: 8px;
-      right: 18px;
-    }
-  }
+.rowt70 {
+  margin: 65px 5% 0 0;
 }
 
-
-.nav {
-  margin-top: 20px;
-  display: block;
-
-  .caret {
-    top: 14px;
-    position: absolute;
-    right: 10px;
-  }
-
-  li {
-    > a + div .nav {
-      margin-top: 5px;
-      li > a {
-        margin-top: 0px;
-        padding: 8px 8px;
-      }
-    }
-
-    > a {
-      margin: 10px 15px 0;
-      border-radius: $btn-round-radius;
-      color: $white;
-      display: block;
-      text-decoration: none;
-      position: relative;
-      text-transform: uppercase;
-      cursor: pointer;
-      font-size: $font-size-xs;
-      padding: 10px 8px;
-      line-height: $line-height-lg;
-    }
-
-    &:first-child > a {
-      margin: 0 15px;
-    }
-
-    &:hover:not(.active) > a,
-    &:focus:not(.active) > a {
-      p,
-      i {
-        color: $white;
-      }
-    }
-
-    &:hover:not(.active) > a i,
-    &:focus:not(.active) > a i {
-      color: $white;
-    }
-
-    &.active > a:not([data-toggle="collapse"]) {
-      background: transparent;
-
-      i,
-      p {
-        color: white;
-      }
-
-      &:before {
-        content: " ";
-        position: absolute;
-        height: 6px;
-        width: 6px;
-        top: 22px;
-        left: -4px;
-        background: $white;
-        border-radius: 50%;
-      }
-    }
-
-    &.active > a[data-toggle="collapse"] {
-      background: transparent;
-      box-shadow: none;
-      color: $white;
-
-      i {
-        color: $white;
-      }
-
-      & + div .nav .active a {
-        box-shadow: none;
-        .sidebar-mini-icon,
-        .sidebar-normal {
-          color: $white;
-          font-weight: $font-weight-normal;
-        }
-
-        &:before {
-          content: " ";
-          position: absolute;
-          height: 6px;
-          width: 6px;
-          top: 17px;
-          left: -4px;
-          background: $white;
-          border-radius: 50%;
-        }
-      }
-      &:before {
-        content: " ";
-        position: absolute;
-        height: 6px;
-        width: 6px;
-        top: 22px;
-        left: -4px;
-        background: rgba($white, 0.6);
-        border-radius: 50%;
-      }
-    }
-  }
-
-  p {
-    margin: 0;
-    font-weight: $font-weight-bold;
-    color: rgba($white, 0.8);
-    line-height: 30px;
-    position: relative;
-    display: block;
-    height: auto;
-    white-space: nowrap;
-    @extend .animation-transition-general;
-  }
-
-  i {
-    font-size: 20px;
-    float: left;
-    margin-right: 12px;
-    line-height: 30px;
-    width: 34px;
-    text-align: center;
-    color: $opacity-8;
-    position: relative;
-  }
+.row > * {
+  padding: 1%;
 }
-***/
+
+.card-header {
+  padding: 10px;
+}
+
+.card-title {
+  margin-bottom: 3px;
+}
+
+.line-primary {
+  margin: 5px 0;
+}
+
+.sidebar {
+  box-shadow: 0px 0px 10px 2px rgba(214, 214, 214, 0.6);
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 3%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+}
+
+.sidebar li:hover {
+  background-color: rgba(214, 214, 214, 0.6);
+}

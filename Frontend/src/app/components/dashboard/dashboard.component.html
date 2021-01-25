@@ -1,160 +1,131 @@
-<div class="wrapper">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">Dashboard</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-              <form #form class="form-inline my-2 my-lg-0">
-                  <button (click)="clickEvent()" type="button" class="btn btn-light" id="search-btn">
-                      <span>
-                          <i class="fas fa-search"></i>
-                      </span>
-                  </button>
-                  <input #seachtext id="search-text" class="form-control mr-sm-2" type="search" placeholder="Search"
-                      aria-label="Search">
-              </form>
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Notifications
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Not 1</a>
-                      <a class="dropdown-item" href="#">Not 2</a>
-                  </div>
-              </li>
-
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      User
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Profile</a>
-                      <a class="dropdown-item" href="#">Settings</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Log out</a>
-                  </div>
-              </li>
-
-          </ul>
-
-      </div>
-  </nav>
-
-  <div class="sidebar">
-      <div class="sidebar-wrapper">
-          <div class="logo">
-              <a class="simple-text logo-mini" href="/">
-                  <img class="logo-img"
-                      src="https://scontent.fgye5-1.fna.fbcdn.net/v/t1.0-9/120048759_101788305023995_5997295043642270537_n.png?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_eui2=AeG0MyEthiTRLAraLZO5QCZrRFezJWi0xQNEV7MlaLTFA2xl5Ey5oD-GvQ4UsIUmlWPIN6wc7NiT_PnaAUXfttwI&_nc_ohc=zDMWv84x_dYAX_mhgah&_nc_oc=AQmweacH8mIs9luuKuDwHOvhCn-3nnj9J2LGNh0VRQHvMHPSWVJFqJv93HYDi5cMtd0&_nc_ht=scontent.fgye5-1.fna&oh=db7788c2d7d0f6e4c105ea21e65754d4&oe=5FEBF331"
-                      alt="">
-              </a>
-              <a class="simple-text logo-mini" href="/">
-                  Lubricantes<br>Saldur
-              </a>
-          </div>
-          <hr class="middle-line">
-          <ul class="nav">
-              <li class="nav-item">
-                  <a class="nav-link" href="">
-                      Administrador-Saldur
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="">
-                      Ventas
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="">
-                      Datos
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="">
-                      Estadisticas
-                  </a>
-              </li>
-          </ul>
-      </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" role="button">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </form>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Notifications
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Not 1</a>
+          <a class="dropdown-item" href="#">Not 2</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          User
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Log out</a>
+        </div>
+      </li>
+    </ul>
   </div>
-
-  <div class="main-panel">
-      <div class="content">
-          <div>
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="card card-chart card-plain">
-                          <div class="card-header">
-                              <div class="row">
-                                  <div class="col-sm-6 text-left">
-                                      <h6 class="card-category">Balance</h6>
-                                      <!-- <hr class="line-primary" /> -->
-                                      <h5 class="card-title">Ventas del año</h5>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <div class="chart-area"><canvas class="lineChart"></canvas></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <br>
-              <div class="row">
-                  <div class="col-lg-4">
-                      <div class="card card-chart card-plain">
-                          <div class="card-header">
-                              <div class="row">
-                                  <div class="col-sm-6 text-left">
-                                      <!-- <h8 class="card-category">Pedidos</h8> -->
-                                      <h5 class="card-title">Pedidos entregados</h5>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <div class="chart-area"><canvas class="lineChart"></canvas></div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="card card-chart card-plain">
-                          <div class="card-header">
-                              <div class="row">
-                                  <div class="col-sm-6 text-left">
-                                      <h6 class="card-category">Productos</h6>
-                                      <h5 class="card-title">Costos</h5>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <div class="chart-area"><canvas class="barChart"></canvas></div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="card card-chart card-plain">
-                          <div class="card-header">
-                              <div class="row">
-                                  <div class="col-sm-6 text-left">
-                                      <h6 class="card-category">Inventario</h6>
-                                      <h5 class="card-title">Stock</h5>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="card-body">
-                              <div class="chart-area"><canvas class="lineChart"></canvas></div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+</nav>
+<div class="row rowt70">
+  <div class="col-md-12 col-lg-3">
+    <div class="sidebar">
+      <div class="logo">
+        <a class="simple-text logo-mini" href="/">
+          <img class="logo-img"
+            src="https://us.123rf.com/450wm/thesomeday123/thesomeday1231712/thesomeday123171200009/91087331-icono-de-perfil-de-avatar-predeterminado-para-hombre-marcador-de-posición-de-foto-gris-vector-de-ilustr.jpg?ver=6"
+            alt="">
+        </a>
+        <a class="simple-text logo-mini" href="/">
+          Lubricantes<br>Saldur
+        </a>
       </div>
+      <hr class="middle-line">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            Administrador-Saldur
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            Ventas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            Datos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">
+            Estadisticas
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-12 col-lg-9">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-chart card-plain">
+          <div class="card-header">
+            <h6 class="card-category">Balance</h6>
+            <hr class="line-primary" />
+            <h5 class="card-title">Ventas del año</h5>
+          </div>
+          <div class="card-body">
+            <div class="chart-area"><canvas class="lineChart" id="canvas0"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card card-chart card-plain">
+          <div class="card-header">
+            <h5 class="card-title">Pedidos<br>entregados</h5>
+          </div>
+          <div class="card-body">
+            <div class="chart-area"><canvas class="lineChart" id="canvas1"></canvas></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-chart card-plain">
+          <div class="card-header">
+            <h6 class="card-category">Productos</h6>
+            <h5 class="card-title">Costos</h5>
+          </div>
+          <div class="card-body">
+            <div class="chart-area"><canvas class="barChart" id="canvas2"></canvas></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-chart card-plain">
+          <div class="card-header">
+            <h6 class="card-category">Inventario</h6>
+            <h5 class="card-title">Stock</h5>
+          </div>
+          <div class="card-body">
+            <div class="chart-area"><canvas class="lineChart" id="canvas3"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
