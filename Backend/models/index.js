@@ -26,10 +26,10 @@ db.Comentario = require("./Comentario.model.js")(sequelize, Sequelize);
 db.Administrador = require("./Administrador.model.js")(sequelize, Sequelize);
 db.Producto = require("./Producto.model.js")(sequelize, Sequelize);
 
-// db.maestro.hasMany(db.detalle, { as: "detalles" });
-// db.detalle.belongsTo(db.maestro, {
-//   foreignKey: "maestroId",
-//   as: "maestro",
+db.Producto.hasOne(db.Administrador, { as: "idAdministrador" });
+// db.Administrador.hasMany(db.Producto, {
+//     foreignKey: "maestroId",
+//     as: "maestro",
 // });
 
 module.exports = db;

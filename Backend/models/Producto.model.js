@@ -1,3 +1,5 @@
+// const administrador = db.import('./Administrador.model.js');
+
 module.exports = (sequelize, DataTypes) => {
   const Producto = sequelize.define("producto", {
     // idProducto: {
@@ -15,13 +17,13 @@ module.exports = (sequelize, DataTypes) => {
     FechaIngreso: {
       type: DataTypes.DATE
     },
-    idAdministrador: {
-      type: DataTypes.INTEGER, allowNull: false,
-      references: {
-        model: administrador,
-        key: 'idAdministrador'
-      }
-    }
+    // idAdministrador: {
+    //   type: DataTypes.INTEGER, allowNull: false,
+    //   references: {
+    //     model: administrador,
+    //     key: 'idAdministrador'
+    //   }
+    // }
   });
 
   return Producto;

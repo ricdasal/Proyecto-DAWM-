@@ -24,7 +24,7 @@ exports.create = (req, res) => {
 // Save Tutorial in the database
   Producto.create(producto)
     .then(data => {
-        res.redirect('/producto/views');
+        res.redirect('/producto/view');
     })
     .catch(err => {
         res.status(500).send({
@@ -34,13 +34,13 @@ exports.create = (req, res) => {
 };
 
 // Create and Save a new Maestro
-exports.saveFormView = (req, res) => { 
-  res.render('maestro_post', { titulo: 'Guardar Maestro' });
-};
+// exports.saveFormView = (req, res) => { 
+//   res.render('maestro_post', { titulo: 'Guardar Maestro' });
+// };
 
-// Retrieve all Maestros from the database.
+// Retrieve all Productos from the database.
 exports.findAll = (req, res) => {
-  Maestro.findAll()
+  Producto.findAll()
     .then(data => {
       res.send(data);
     })
