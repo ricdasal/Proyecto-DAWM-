@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= titulo %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>
+        <%= titulo %>
+    </h1>
+    <form action="/producto/save" method="post" >
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" name="Nombre"><br>
+        <label for="Stock">Stock:</label><br>
+        <input type="number" name="Stock"><br>
+        <label for="FechaVencimiento">Stock:</label><br>
+        <input type="date" name="FechaVencimiento"><br>
+        <label for="FechaIngreso">Stock:</label><br>
+        <input type="date" name="FechaIngreso"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

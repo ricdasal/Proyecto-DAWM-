@@ -53,9 +53,9 @@ exports.findAll = (req, res) => {
 };
 
 exports.findAllView = (req, res) => {
-  Maestro.findAll()
+  Producto.findAll()
     .then(data => {
-      res.render('maestro_all', { titulo: 'Maestros', maestros: data });
+      res.render('productos', { titulo: 'Productos Lubricadora Saldur', productos: data });
     })
     .catch(err => {
       res.status(500).send({

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>
         <%= titulo %>
     </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -15,9 +16,9 @@
     <form >
         <label for="cars">Productos:</label>
            
-            <select name="latitud" id="latitude">
-                <% for (var i = 0; i < ubicaciones.length; i++) { %>
-                    <option value="<%=ubicaciones[i].latitude%>"><%= ubicaciones[i].name.first %></option>
+            <select name="productos">
+                <% for (var i = 0; i < productos.length; i++) { %>
+                    <option value="<%=productos[i].Nombre%>"><%= productos[i].Nombre %></option>
                 <% } %>    
             </select>
             <br><br>
