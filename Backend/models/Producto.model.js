@@ -3,7 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Producto = sequelize.define("producto", {
     // idProducto: {
-    //   type: DataTypes.INT
+    //   type: DataTypes.INTEGER
     // },
     Nombre: {
       type: DataTypes.STRING, allowNull: false
