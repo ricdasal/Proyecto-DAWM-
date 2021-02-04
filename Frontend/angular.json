@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "LubricantesSaldur"
+  "defaultProject": "LubricantesSaldur",
+  "cli": {
+    "analytics": "48534948-04b5-4141-9c63-46c2a03395d8"
+  }
 }

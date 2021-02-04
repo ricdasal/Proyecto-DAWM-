@@ -12,7 +12,7 @@ router.post('/login', (req, res) => {
   var token = auth.sign(req.body.user, req.body.password);
 
   res.cookie('token', token, { maxAge: 1000 * 60 * 2, httpOnly: true })
-  res.render('pagina_intermedia')
+  res.render('pagina_intermedia') //pagina principal del lubricantes
 });
 
 

@@ -1,9 +1,9 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-white">
     <!-- Navbar content -->
-  <div class='container'>
-    <a data-step="1" data-intro="Este es el logo y nombre de la página" href="#"><span class = 'navbar-brand nbar colorLetra' >Lubricantes Saldur</span></a>
-    <ul class="nav colorLetra">
+    <div class='container'>
+      <a data-step="1" data-intro="Este es el logo y nombre de la página" href="#"><span class = 'navbar-brand nbar colorLetra' >Lubricantes Saldur</span></a>
+      <ul class="nav colorLetra">
         <li class="nav-item mespaciado colorLetra">
           <a class="nav-link fa fa-facebook facebook colorLetra" href="#"></a>
         </li>
@@ -14,30 +14,31 @@
           <a class="nav-link fa fa-google google colorLetra" href="#"></a>
         </li>
 
-      <!--Aquí comienza el menú desplegable en nav-->
-    <li class="nav-item dropdown espaciado">
-      <a data-intro="Aquí podrá encontrar las distintas secciones que posee el sitio web" class="nav-link dropdown-toggle iespaciado  colorLetra" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-        Menu
-      </a>
-      <!--indexar sus partes aquí-->
-      <div class="dropdown-menu  colorLetra" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item  colorLetra" routerLink= "/presentacion" (click)="navigate('presentacion')">Quienes Somos</a>
-        <a class="dropdown-item  colorLetra" routerLink= "/Noticias" (click)="navigate('Noticias')" >Noticias</a>
-        <a class="dropdown-item  colorLetra" [routerLink]= "['/Contactenos']">Contáctenos</a>
-        <a class="dropdown-item  colorLetra" [routerLink]= "['/Ubicacion']">Ubicación</a>
-        <a class="dropdown-item  colorLetra" href="src/views/Marvel.html">Api de Marvel</a>
-      </div>
-    </li>
+        <!--Aquí comienza el menú desplegable en nav-->
+        <li class="nav-item dropdown espaciado">
+          <a data-intro="Aquí podrá encontrar las distintas secciones que posee el sitio web" class="nav-link dropdown-toggle iespaciado  colorLetra" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <!--indexar sus partes aquí-->
+          <div class="dropdown-menu  colorLetra" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item  colorLetra" routerLink= "/presentacion" (click)="navigate('presentacion')">Quienes Somos</a>
+            <a class="dropdown-item  colorLetra" routerLink= "/Noticias" (click)="navigate('Noticias')" >Noticias</a>
+            <a class="dropdown-item  colorLetra" [routerLink]= "['/Contactenos']">Contáctenos</a>
+            <a class="dropdown-item  colorLetra" [routerLink]= "['/Ubicacion']">Ubicación</a>
+            <a class="dropdown-item  colorLetra" [routerLink]="['/Reporte']">Reportes</a>
+          </div>    
+        </li>
 
-    <li class="nav.item ">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text nencoger"><i class="fas fa-search"></i></span>
-        </div>
-        <input type="text" class="form-control nencoger nencoger1" placeholder="Búsqueda">
-      </div>
-    </li>
-    </ul>
-  </div>
+        <li class="nav.item ">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text nencoger"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control nencoger nencoger1" placeholder="Búsqueda">
+          </div>
+        </li>
+      </ul>    
+    </div>
+    <a id="Sesion" [routerLink]="['/Login']">Login</a>
   </nav>
 </header>

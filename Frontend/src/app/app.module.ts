@@ -18,6 +18,8 @@ import { filter } from 'rxjs/operators';
 import { ReportComponent } from './components/report/report.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     GeolocalizacionComponent,
     DashboardComponent,
     ReportComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

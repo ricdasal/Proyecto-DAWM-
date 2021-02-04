@@ -5,6 +5,7 @@ import { SaldurSectionComponent } from './components/saldur-section/saldur-secti
 import { ContactComponent } from './components/contact/contact.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'Ubicacion', component: GeolocalizacionComponent },
   { path: 'Dashboard', component: DashboardComponent },
   { path: 'Reporte', component: ReportComponent },
+  { path: 'Login', component: LoginComponent },
 ];
 
 @NgModule({

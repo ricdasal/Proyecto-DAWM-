@@ -1,0 +1,11 @@
+.form-signin {
+  padding: 3% 25%;
+  background-color: #dbc15f;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sr-only {
+  margin: 3%;
+}
