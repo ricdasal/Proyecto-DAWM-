@@ -5,9 +5,12 @@ module.exports.isAuthorized = (req, res, next) => {
 
     if (req.cookies && req.cookies.token) {
         jwt.verify(req.cookies.token, accessTokenSecret, (err, data) => {
-            if (!err && data.user == "abc" && data.password == "abc") {
+            if (!err && data.user == "administrador" && data.password == "administrador") {
                 req.data = { user: data.user, password: data.password };
                 next();
+            } else if(!err && data.user == "cliente" && data.password == "cliente"){
+              req.data = { user: data.user, password: data.password };
+              next();
             } else {
                 res.locals.message = 'Forbidden';
                 res.locals.error = { status: '403', stack: 'Acceso no permitido' }
