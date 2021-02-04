@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
-import { Character } from './../../interfaces/character.interface';
+import { Character } from '../../interfaces/empresa.interface';
 import { ProductoService } from './../../services/producto.service';
 import { Producto } from './../../interfaces/producto.interface';
 
@@ -13,7 +13,7 @@ import { Producto } from './../../interfaces/producto.interface';
 export class ReportComponent implements OnInit {
   productos: Producto[] = []; //para llenar el dropdownlist
   datos_filtrados: Producto[] = []
-  // character: Character = null; //para llenar la tabla
+  character: Character = null; //para llenar la tabla (sin uso)
   productoFilter: any = { nombre: "", fecha: "" };
   filters: any = { nombre: "", fecha: ""};
 
@@ -33,11 +33,11 @@ export class ReportComponent implements OnInit {
   }
 
 
-  // requerimientoPorCaracter(id: string): void {
-  //   this.productoSvc.buscarCharacterInfo(id).subscribe( (res:any) => {
-  //     this.character = res;
-  //   });
-  // }
+  requerimientoPorCaracter(id: string): void {//sin uso
+    this.productoSvc.buscarCharacterInfo(id).subscribe( (res:any) => {
+      this.character = res;
+    });
+  }
 
   updateFilters(): void {
     this.filters = Object.assign({}, this.productoFilter);
