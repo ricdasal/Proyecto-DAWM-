@@ -1,0 +1,42 @@
+<div class="titulo-reporte">
+  <h2>Reportes</h2>
+</div>
+<section class="container-lg reporte-contenedor">
+  <div class="container-fluid">
+    <form class="d-flex row justify-around filtro">
+      <select (change)='requerimientoPorCaracter($event.target.value)' class="form-select col-12 col-md-6 col-lg-4" aria-label="Default select example">
+        <option selected>Nombre del producto...</option>
+        <option *ngFor="let producto of productos" [value]="producto.Nombre">{{producto.Nombre}}</option>
+      </select>
+      <div class="fecha fecha-desde col-12 col-md-6 col-lg-4">
+        <label for="">Fecha </label>
+        <input name="nombreFilter" class="form-control me-2" type="date" [(ngModel)]="productoFilter.fecha" (ngModelChange)="updateFilters()">
+      </div>
+      <input name="fechaFilter" class="form-control col-12 col-md-6 col-lg-4" type="text" placeholder="Buscar producto..." [(ngModel)]="productoFilter.nombre" (ngModelChange)="updateFilters()">
+    </form>
+  </div>
+  <table class="table table-striped tabla-resultados">
+    <thead>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Fecha Ingreso</th>
+        <th scope="col">Fecha de Vencimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngIf="character!=null">
+        <td>{{ character.id }}</td>
+        <td>{{ character.name }}</td>
+        <td>{{ character.status }}</td>
+        <td>{{ character.created | date }}</td>
+      </tr> -->
+      <tr *ngFor="let producto of datos_filtrados | filter:filters">
+        <td>{{ producto.Nombre }}</td>
+        <td>{{ producto.Stock }}</td>
+        <td>{{ producto.FechaIngreso | date }}</td>
+        <td>{{ producto.FechaVencimiento | date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

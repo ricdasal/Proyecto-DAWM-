@@ -1,6 +1,7 @@
 import { Router, RouterModule, Scroll } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { GeolocalizacionComponent } from './components/geolocalizacion/geolocali
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { ReportComponent } from './components/report/report.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,12 +30,16 @@ import { filter } from 'rxjs/operators';
     FooterComponent,
     ContactComponent,
     GeolocalizacionComponent,
-    DashboardComponent
+    DashboardComponent,
+    ReportComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    FormsModule
   ],
   exports: [
     RouterModule

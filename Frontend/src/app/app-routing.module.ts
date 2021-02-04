@@ -1,3 +1,4 @@
+import { ReportComponent } from './components/report/report.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GeolocalizacionComponent } from './components/geolocalizacion/geolocalizacion.component';
 import { SaldurSectionComponent } from './components/saldur-section/saldur-section.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'index', component: SaldurSectionComponent },
   { path: 'Contactenos', component: ContactComponent },
   { path: 'Ubicacion', component: GeolocalizacionComponent },
-  { path: 'Dashboard', component: DashboardComponent }
+  { path: 'Dashboard', component: DashboardComponent },
+  { path: 'Reporte', component: ReportComponent },
 ];
 
 @NgModule({
