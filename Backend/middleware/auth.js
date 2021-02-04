@@ -1,5 +1,7 @@
 var jwt = require('jsonwebtoken');
 const accessTokenSecret = 'dawm';
+const db = require("../models");
+const User = db.Usuario;
 
 module.exports.isAuthorized = (req, res, next) => {
 

@@ -17,6 +17,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     Telefono: {
       type: DataTypes.INTEGER
+    },
+    Passw : {
+      type: DataTypes.INTEGER
     }
   });
     
