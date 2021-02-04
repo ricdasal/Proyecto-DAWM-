@@ -9,12 +9,15 @@ const cors = require("cors");
 var indexRouter = require('./routes/index.routes');
 var usersRouter = require('./routes/users');
 var productRouter = require('./routes/producto.routes');
+var proveedorRouter = require('./routes/proveedor.routes');
 
 var app = express();
 
 //Base de datos
 const db = require("./models"); 
 db.sequelize.sync();
+//nodb
+const nodb = require("./collections");
 
 // Para que se conecte a la aplicación de Angular
 var corsOptions = { origin: "http://localhost:4200" };
@@ -33,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/producto', productRouter);
+app.use('/proveedor', proveedorRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

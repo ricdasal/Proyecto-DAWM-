@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
-import { take } from 'rxjs/operators';
-import { Character } from '../../interfaces/empresa.interface';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Proveedor } from '../../interfaces/empresa.interface';
 import { ProductoService } from './../../services/producto.service';
 import { Producto } from './../../interfaces/producto.interface';
 
@@ -11,14 +10,15 @@ import { Producto } from './../../interfaces/producto.interface';
   styleUrls: ['./report.component.css']
 })
 export class ReportComponent implements OnInit {
-  productos: Producto[] = []; //para llenar el dropdownlist
+  productos_info: Producto[] = []; //para llenar el dropdownlist
+  productos: any[] = [];
+  proveedores: Proveedor[] = []; //para llenar la tabla de proveedor
+
   datos_filtrados: Producto[] = []
-  character: Character = null; //para llenar la tabla (sin uso)
   productoFilter: any = { nombre: "", fecha: "" };
   filters: any = { nombre: "", fecha: ""};
 
-  constructor(
-    private productoSvc: ProductoService, private router: Router, private route: ActivatedRoute) {}
+  constructor(private productoSvc: ProductoService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.getProducto();
@@ -26,16 +26,20 @@ export class ReportComponent implements OnInit {
 
   private getProducto(): void {
     this.productoSvc.buscarProducto().subscribe( (res:any) => {
-      // this.productos = res.results;
-      this.productos = res;
+      this.productos_info = res;
       this.datos_filtrados = res;
-    })
+      let conjunto = new Set();
+      for(let producto of this.productos_info){
+        conjunto.add(producto.Nombre);
+      }
+      this.productos = Array.from(conjunto);
+    });
   }
 
 
-  requerimientoPorCaracter(id: string): void {//sin uso
-    this.productoSvc.buscarCharacterInfo(id).subscribe( (res:any) => {
-      this.character = res;
+  requerimientoPorProducto(producto: string): void {
+    this.productoSvc.buscarProveedorInfo(producto).subscribe( (res:any) => {
+      this.proveedores = res;
     });
   }
 

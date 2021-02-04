@@ -1,0 +1,56 @@
+[
+  {
+    "producto": "Aceite de Carro",
+    "proveedor": "AgenteComexEc",
+    "ciudad": "Quito",
+    "Activo": "NO"
+  },
+  {
+    "producto": "Equipo de engrase",
+    "proveedor": "PalmarFils S.A.",
+    "ciudad": "Machala",
+    "Activo": "SI"
+  },
+  {
+    "producto": "Bomba Manual Aceitadora",
+    "proveedor": "Biofactor S.A.",
+    "ciudad": "Guayaquil",
+    "Activo": "SI"
+  },
+  {
+    "producto": "Tanque de aceite",
+    "proveedor": "CN Lubricantes",
+    "ciudad": "Guayaquil",
+    "Activo": "NO"
+  },
+  {
+    "producto": "Aceit Semi-sintetico",
+    "proveedor": "FiltroFast",
+    "ciudad": "Quito",
+    "Activo": "NO"
+  },
+  {
+    "producto": "Tanque de aceite",
+    "proveedor": "PalmarFils S.A.",
+    "ciudad": "Machala",
+    "Activo": "SI"
+  },
+  {
+    "producto": "Aceite de Carro",
+    "proveedor": "Biofactor S.A.",
+    "ciudad": "Guayaquil",
+    "Activo": "SI"
+  },
+  {
+    "producto": "Aceit Semi-sintetico",
+    "proveedor": "Biofactor S.A.",
+    "ciudad": "Guayaquil",
+    "Activo": "SI"
+  },
+  {
+    "producto": "Tanque de aceite",
+    "proveedor": "AgenteComexEc",
+    "ciudad": "Quito",
+    "Activo": "NO"
+  },
+]

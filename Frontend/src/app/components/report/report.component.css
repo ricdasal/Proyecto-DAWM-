@@ -6,11 +6,20 @@
   height: 470px;
   margin-top: 30px;
   background-color: lightgray;
-  /* border-top-left-radius: 20px ;
-  border-top-right-radius: 20px ; */
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
   overflow: hidden;
   overflow: auto;
 }
+
+.proveedor-contenedor {
+  height: 300px;
+  margin-bottom: 30px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.sin-info { text-align: center; }
 
 .reporte-contenedor::-webkit-scrollbar { width: 5px; height: 40px; }
 

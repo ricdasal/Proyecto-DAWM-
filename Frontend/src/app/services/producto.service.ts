@@ -1,4 +1,4 @@
-import { Character } from '../interfaces/empresa.interface';
+import { Proveedor } from '../interfaces/empresa.interface';
 import { Producto } from './../interfaces/producto.interface';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
@@ -14,9 +14,9 @@ export class ProductoService {
     return this.http.get<Producto[]>("http://localhost:3000/producto/all");
   }
 
-  buscarCharacterInfo(id: string) {//sin uso
-    if(id){
-      return this.http.get<Character>(`https://rickandmortyapi.com/api/character/${id}`);
+  buscarProveedorInfo(producto: string) {
+    if(producto){
+      return this.http.get<Proveedor>(`http://localhost:3000/proveedor/${producto}`);
     }
 
   }

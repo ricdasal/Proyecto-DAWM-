@@ -1,6 +1,6 @@
-export interface Character {
-  id: number;
-  name: string;
-  status: string;
-  created: string;
+export interface Proveedor {
+  producto: string;
+  proveedor: string;
+  ciudad: string;
+  Activo: string;
 }
