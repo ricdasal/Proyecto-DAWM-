@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/ingresar', (req, res) => {
+router.post('/login', (req, res) => {
 
   var token = auth.sign(req.body.user, req.body.password);
 
