@@ -1,6 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
   const Vendedor = sequelize.define("vendedor", {
-    freezeTableName: true,
     // idVendedor: {
     //   type: DataTypes.INT
     // },

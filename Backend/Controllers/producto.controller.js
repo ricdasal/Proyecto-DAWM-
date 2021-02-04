@@ -69,7 +69,7 @@ exports.findAllView = (req, res) => {
 exports.findOne = (req, res) => {
   const id = req.params.id;
 
-  Maestro.findByPk(id)
+  Producto.findByPk(id)
     .then(data => {
       res.send(data);
     })
